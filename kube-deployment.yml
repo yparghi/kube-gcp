@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: yash-practice-app-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: yash-practice-app-gcpapp
+  template:
+    metadata:
+      labels:
+        app: yash-practice-app-gcpapp
+    spec:
+      containers:
+      - name: yash-practice-app-container
+        image: us-central1-docker.pkg.dev/wide-empire-206023/yash-practice-repo/yash-practice-app:latest
+        ports:
+        - containerPort: 8088
+
