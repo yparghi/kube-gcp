@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: yash-practice-backend-service
+spec:
+  selector:
+    app: yash-practice-backend-gcpapp
+  type: ClusterIP
+  ports:
+  - port: 8089
+    targetPort: 8088
+
