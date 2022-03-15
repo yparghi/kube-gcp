@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: yash-practice-app-container
-        image: us-central1-docker.pkg.dev/wide-empire-206023/yash-practice-repo/yash-practice-app:latest
+        image: us-central1-docker.pkg.dev/wide-empire-206023/yash-practice-repo/yash-practice-app:v1
         ports:
         - containerPort: 8088
 
